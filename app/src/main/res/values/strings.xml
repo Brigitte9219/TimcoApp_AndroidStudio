@@ -5,4 +5,10 @@
     <string name="botonUno">Módulos</string>
     <string name="botonDos">Contacto</string>
     <string name="botonTres">PQRSF</string>
+    <string name="pieUno">Transporte, Ingenieria y Maquinaria de Colombia S.A.S.</string>
+    <string name="pieDos">Contacto</string>
+    <string name="pieTres">timcosas@gmail.com</string>
+    <string name="pieCuatro">3142221847</string>
+    <string name="pieCinco">Bogotá D.C.</string>
+    <string name="pieSeis">lun - Vie 08:00am a 5:00pm</string>
 </resources>

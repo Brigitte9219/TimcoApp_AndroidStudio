@@ -9,8 +9,10 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="414dp"
-        android:layout_height="107dp"
+        android:layout_width="413dp"
+        android:layout_height="88dp"
+        android:background="#FF9800"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,23 +35,22 @@
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:background="#FF9800"
-            android:textColor="@color/white"
-            android:textStyle="bold"
             android:gravity="center"
+            android:text="@string/tituloDos"
             android:textAlignment="center"
+            android:textColor="@color/white"
             android:textSize="18dp"
-            android:text="@string/tituloDos" />
+            android:textStyle="bold" />
 
     </LinearLayout>
 
     <TableRow
         android:id="@+id/tableRow"
-        android:layout_width="410dp"
-        android:layout_height="84dp"
-        android:background="#FFFFFF"
+        android:layout_width="350dp"
+        android:layout_height="76dp"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
@@ -59,38 +60,141 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:text="@string/botonUno"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            app:backgroundTint="#FFEB3B" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
             android:text="@string/botonDos"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"/>
+            android:textColor="@color/black" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
             android:text="@string/botonTres"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"/>
+            android:textColor="@color/black" />
 
     </TableRow>
 
     <TableRow
-        android:layout_width="324dp"
-        android:layout_height="369dp"
+        android:id="@+id/tableRow2"
+        android:layout_width="415dp"
+        android:layout_height="404dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableRow" >
+        app:layout_constraintTop_toBottomOf="@+id/tableRow">
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/retro" />
+            android:layout_height="match_parent"
+            android:src="@drawable/retro"
+            android:layout_gravity="center"/>
     </TableRow>
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="158dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="@string/pieUno"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/youtube" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/facebook" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/gmail" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/maps" />
+
+            <LinearLayout
+                android:layout_width="192dp"
+                android:layout_height="123dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pieDos"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pieTres"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pieCuatro"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pieCinco"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pieSeis"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
