@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Timco</string>
+    <string name="tituloUno">SISTEMA DE INIVENTARIOS</string>
+    <string name="tituloDos">TIMCO S.A.S.</string>
+    <string name="botonUno">Módulos</string>
+    <string name="botonDos">Contacto</string>
+    <string name="botonTres">Inicio</string>
 </resources>
