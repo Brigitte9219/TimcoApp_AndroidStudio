@@ -19,4 +19,9 @@
     <string name="mCuatro">Solicitar productos</string>
     <string name="mCinco">Asignar un producto</string>
     <string name="mSeis">Gestionar reportes o informes</string>
+    <string name="contacto">CONTACTO</string>
+    <string name="txtUno">Muchas gracias por su interés, si tiene alguna pregunta.¡Escribanos un mensaje ahora!</string>
+    <string name="enviar">Enviar</string>
+    <string name="txtDos">La persona encargada se comunicará con usted de acuerdo con los datos diligenciados en este formulario. </string>
+
 </resources>
