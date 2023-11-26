@@ -51,7 +51,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/btnInicio"
                 style="?attr/materialButtonOutlinedStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
                 app:strokeColor="@color/black" />
 
             <Button
-                android:id="@+id/btnCambiar"
+                android:id="@+id/btnModulos"
                 style="?attr/materialButtonOutlinedStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
                 app:strokeColor="@color/black" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnContacto"
                 style="?attr/materialButtonOutlinedStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

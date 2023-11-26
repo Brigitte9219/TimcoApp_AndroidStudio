@@ -56,7 +56,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <Button
-            android:id="@+id/btnCambiar"
+            android:id="@+id/btnModulos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
@@ -65,7 +65,7 @@
             android:textSize="15sp"/>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnContacto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"

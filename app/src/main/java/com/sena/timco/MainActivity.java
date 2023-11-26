@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         /* Para referenciar el button que está en el layout
          * se hace por medio del Id y con el método findViewById*/
-        btnCambiar = findViewById(R.id.btnCambiar);
+        btnCambiar = findViewById(R.id.btnModulos);
 
         /* en la variable btnDos quedan almacenadas las propiedades del boton
          * para poder manejar el evento listener */
