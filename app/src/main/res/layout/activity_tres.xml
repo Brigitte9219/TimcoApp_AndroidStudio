@@ -62,7 +62,7 @@
                 app:strokeColor="@color/black" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btnCambiar"
                 style="?attr/materialButtonOutlinedStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
