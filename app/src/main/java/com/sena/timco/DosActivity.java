@@ -34,11 +34,29 @@ public class DosActivity extends AppCompatActivity {
             }
         });
 
+        btnModulos=findViewById(R.id.btnModulos);
+        btnModulos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(DosActivity.this, DosActivity.class);
+                startActivity(intent);
+                showToast("Hiciste clic en el botón y pasaste a la página de Módulos");
+            }
+        });
+
+        btnContacto=findViewById(R.id.btnContacto);
+        btnContacto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(DosActivity.this, TresActivity.class);
+                startActivity(intent);
+                showToast("Hiciste clic en el botón y pasaste a la página de Contacto");
+            }
+        });
 
     }
             private void showToast(String message) {
            // Código para mostrar un mensaje en la interfaz de usuario
-           // Puedes usar Toast u otras técnicas para mostrar mensajes al usuario// Aquí se usa Toast como ejemplo
             Toast.makeText(DosActivity.this, message, Toast.LENGTH_SHORT).show();
     }
 }

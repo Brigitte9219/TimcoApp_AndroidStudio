@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnCambiar;
 
+    Button btnContacto;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
          * se hace por medio del Id y con el método findViewById*/
         btnCambiar = findViewById(R.id.btnModulos);
 
-        /* en la variable btnDos quedan almacenadas las propiedades del boton
+        /* en la variable btnCambiar quedan almacenadas las propiedades del boton
          * para poder manejar el evento listener */
         btnCambiar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,12 +38,20 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        btnContacto=findViewById(R.id.btnContacto);
+        btnContacto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this, TresActivity.class);
+                startActivity(intent);
+                showToast("Hiciste clic en el botón y pasaste a la página de Contacto");
+            }
+        });
     }
 
     private void showToast(String message) {
         // Código para mostrar un mensaje en la interfaz de usuario
-        // Puedes usar Toast u otras técnicas para mostrar mensajes al usuario
-        // Aquí se usa Toast como ejemplo
         Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
     }
 }
