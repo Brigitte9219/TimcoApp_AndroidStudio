@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class TresActivity extends AppCompatActivity {
@@ -13,11 +14,35 @@ public class TresActivity extends AppCompatActivity {
     Button btnInicio;
     Button btnModulos;
     Button btnContacto;
+    private EditText editTextName, editTextEmailAddress, editTextAsunto, editTextMultiline;
+    private Button buttonSubmit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tres);
+
+        editTextName = findViewById(R.id.editTextName);
+        editTextEmailAddress = findViewById(R.id.editTextEmailAddress);
+        editTextAsunto = findViewById(R.id.editTextAsunto);
+        editTextMultiline=findViewById(R.id.editTextMultiline);
+
+        buttonSubmit = findViewById(R.id.buttonSubmit);
+        buttonSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Obtener los valores de los campos de texto
+                String name = editTextName.getText().toString();
+                String email = editTextEmailAddress.getText().toString();
+                String asunto = editTextAsunto.getText().toString();
+                String mensaje =editTextMultiline.getText().toString();
+
+                // Puedes hacer lo que quieras con los datos, por ejemplo, mostrarlos en un Toast
+                String message = "Nombre completo: " + name + "\nCorreo electrónico: " + email + "\nAsunto: " + asunto + "\nMensaje: "+ mensaje;
+                Toast.makeText(TresActivity.this, message, Toast.LENGTH_SHORT).show();
+            }
+        });
+
 
         btnInicio=findViewById(R.id.btnInicio);
         btnInicio.setOnClickListener(new View.OnClickListener() {
